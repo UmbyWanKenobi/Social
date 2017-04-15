@@ -31,7 +31,7 @@
     vertical-align: middle;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: _URI('/wp-content/themes/tempera-child/images/socials.png');
+	background: _URI('/wp-content/themes/YOUR THEME-child/images/socials.png');
 }
 #social #facebook {
 	background-position: 0px 0px;

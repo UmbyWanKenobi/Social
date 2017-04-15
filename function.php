@@ -14,10 +14,10 @@ function Social_sharing_buttons($content) {
 		$Social_Thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 		
 		// Set address for feedburner
-		$Social_Name = "If you serve";
+		$Social_Name = "IF YOU SERVE";
  
-		// Construct sharing _URI without using any script
-		$twitter_URI  = '//twitter.com/intent/tweet?text='.$Social_Title.'&amp;_URI='.$Social__URI.'&amp;via=iIf you want';
+		// Construct sharing _URI 
+		$twitter_URI  = '//twitter.com/intent/tweet?text='.$Social_Title.'&amp;_URI='.$Social__URI.'&amp;via=IF YOU WANT';
 		$facebook_URI = '//www.facebook.com/sharer/sharer.php?u='.$Social__URI;
 		$google_URI   = '//plus.google.com/share?_URI='.$Social__URI;
 		$buffer_URI   = '//bufferapp.com/add?_URI='.$Social__URI.'&amp;text='.$Social_Title;
