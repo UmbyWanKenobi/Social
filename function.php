@@ -8,8 +8,8 @@ function Social_sharing_buttons($content) {
 	// Set address for feedburner
 		$Social_Name = "IF YOU SERVE";
 		
-	// Get current page _URI 
-		$Social__URI = _URIencode(get_permalink());
+	// Get current page URI 
+		$Social_URI = urlencode(get_permalink());
  
 	// Get current page title
 		$Social_Title = str_replace( ' ', '%20', get_the_title());
@@ -17,16 +17,16 @@ function Social_sharing_buttons($content) {
 	// Get Post Thumbnail 
 		$Social_Thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 	 
-	// Construct sharing _URI 
-		$twitter_URI  = '//twitter.com/intent/tweet?text='.$Social_Title.'&amp;_URI='.$Social__URI.'&amp;via=IF YOU WANT';
-		$facebook_URI = '//www.facebook.com/sharer/sharer.php?u='.$Social__URI;
-		$google_URI   = '//plus.google.com/share?_URI='.$Social__URI;
-		$buffer_URI   = '//bufferapp.com/add?_URI='.$Social__URI.'&amp;text='.$Social_Title;
-		$whatsapp_URI = '//whatsapp://send?text='.$Social_Title . ' ' . $Social__URI;
-		$linkedIn_URI = '//www.linkedin.com/shareArticle?mini=true&_URI='.$Social__URI.'&amp;title='.$Social_Title;
- 		$tumblr_URI   = '//www.tumblr.com/share?canonical_URI='.$Social__URI;
-		$reddit_URI   = '//reddit.com/submit?_URI='.$Social__URI.'&amp;text='.$Social_Title;
-		$pinterest_URI = '//pinterest.com/pin/create/button/?_URI='.$Social__URI.'&amp;media='.$Social_Thumbnail[0].'&amp;description='.$Social_Title;
+	// Construct sharing URI 
+		$twitter_URI  = '//twitter.com/intent/tweet?text='.$Social_Title.'&amp;url='.$Social_URI.'&amp;via=IF YOU WANT';
+		$facebook_URI = '//www.facebook.com/sharer/sharer.php?u='.$Social_URI;
+		$google_URI   = '//plus.google.com/share?url='.$Social_URI;
+		$buffer_URI   = '//bufferapp.com/add?url='.$Social_URI.'&amp;text='.$Social_Title;
+		$whatsapp_URI = '//whatsapp://send?text='.$Social_Title . ' ' . $Social_URI;
+		$linkedIn_URI = '//www.linkedin.com/shareArticle?mini=true&url='.$Social_URI.'&amp;title='.$Social_Title;
+ 		$tumblr_URI   = '//www.tumblr.com/share?canonicalurl='.$Social_URI;
+		$reddit_URI   = '//reddit.com/submit?_URI='.$Social_URI.'&amp;text='.$Social_Title;
+		$pinterest_URI = '//pinterest.com/pin/create/button/?url='.$Social_URI.'&amp;media='.$Social_Thumbnail[0].'&amp;description='.$Social_Title;
 		$feedburner_URI = '//feeds.feedburner.com/'.$Social_Name;
 
 
