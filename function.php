@@ -28,7 +28,7 @@ function Social_sharing_buttons($content) {
 		$reddit_URI   = '//reddit.com/submit?_URI='.$Social__URI.'&amp;text='.$Social_Title;
 		$pinterest_URI = '//pinterest.com/pin/create/button/?_URI='.$Social__URI.'&amp;media='.$Social_Thumbnail[0].'&amp;description='.$Social_Title;
 		$feedburner_URI = '//feeds.feedburner.com/'.$Social_Name;
-
+&-URI
 
 	// Add sharing button at the end of page/page content
 		$content .= '<div id="social">';
